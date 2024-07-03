@@ -1,19 +1,23 @@
 import { readFile } from "fs/promises";
 import * as anchor from "@coral-xyz/anchor";
-import { TransferHookWhale } from "./program/transfer_hook_whale";
-import idl from './program/transfer_hook_whale.json';
+import { TransferHookWhale } from "/home/satpal/workspace/solana-transfer-hook/target/types/transfer_hook_whale";
+import idl from '/home/satpal/workspace/solana-transfer-hook/target/idl/transfer_hook_whale.json';
 import { TOKEN_2022_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import "dotenv/config";
 
-const kpFile = "./accounts/<your key file>.json";
-const mint = new anchor.web3.PublicKey("<mint public key>")
+//const kpFile = "./accounts/<your key file>.json";
+const kpFile = "/home/satpal/.config/solana/id_user1.json";
+
+//const mint = new anchor.web3.PublicKey("<mint public key>")
+const mint = new anchor.web3.PublicKey("A2HqjLFXkBEkyNKzsnnvskxoYLTwNF1j4K45by9U8UNA");
 
 const main = async () => {
 
     if (!process.env.SOLANA_RPC) {
         console.log("Missing required env variables");
-        return;
+        process.env.SOLANA_RPC = "http://127.0.0.1:8899";
     }
+    process.env.SOLANA_RPC = "http://127.0.0.1:8899";
 
     console.log("💰 Reading wallet...");
     const keyFile = await readFile(kpFile);
@@ -25,6 +29,10 @@ const main = async () => {
     const provider = new anchor.AnchorProvider(connection, wallet, {});
     anchor.setProvider(provider);
     const program = new anchor.Program<TransferHookWhale>(idl as TransferHookWhale, provider);
+
+    console.log("################");
+    console.log(program.programId);
+    console.log("################");
 
     console.log("🪝 Initializing transfer hook accounts");
     const [extraAccountMetaListPDA] = anchor.web3.PublicKey.findProgramAddressSync(
