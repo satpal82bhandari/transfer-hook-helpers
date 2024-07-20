@@ -9,7 +9,7 @@ import "dotenv/config";
 const kpFile = "/home/satpal/.config/solana/id_user1.json";
 
 //const mint = new anchor.web3.PublicKey("<mint public key>")
-const mint = new anchor.web3.PublicKey("A2HqjLFXkBEkyNKzsnnvskxoYLTwNF1j4K45by9U8UNA");
+const mint = new anchor.web3.PublicKey("9JTbLMYjXApRn5SBqxyVDUoGyMusUcmY73nKFLauA52j");
 
 const main = async () => {
 

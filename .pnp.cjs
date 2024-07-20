@@ -31,6 +31,7 @@ const RAW_RUNTIME_STATE =
           ["@solana/spl-token", "virtual:549a51b2a0ef906c6e8795dab6e355d1f28f86eb9e9cc40094d99bb9ca49de37e81c02511c2d219ea99e69a67a0163eccef0d28400b22c2617246620911d7f43#npm:0.4.6"],\
           ["@solana/web3.js", "npm:1.93.1"],\
           ["@types/node", "npm:20.14.8"],\
+          ["@types/yaml", "npm:1.9.7"],\
           ["bs58", "npm:5.0.0"],\
           ["dotenv", "npm:16.4.5"],\
           ["ts-node", "virtual:549a51b2a0ef906c6e8795dab6e355d1f28f86eb9e9cc40094d99bb9ca49de37e81c02511c2d219ea99e69a67a0163eccef0d28400b22c2617246620911d7f43#npm:10.9.2"],\
@@ -543,6 +544,16 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/ws", "npm:8.5.10"],\
           ["@types/node", "npm:20.14.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/yaml", [\
+      ["npm:1.9.7", {\
+        "packageLocation": "../../.yarn/berry/cache/@types-yaml-npm-1.9.7-a7e2bbc474-10c0.zip/node_modules/@types/yaml/",\
+        "packageDependencies": [\
+          ["@types/yaml", "npm:1.9.7"],\
+          ["yaml", "npm:2.4.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1975,6 +1986,7 @@ const RAW_RUNTIME_STATE =
           ["@solana/spl-token", "virtual:549a51b2a0ef906c6e8795dab6e355d1f28f86eb9e9cc40094d99bb9ca49de37e81c02511c2d219ea99e69a67a0163eccef0d28400b22c2617246620911d7f43#npm:0.4.6"],\
           ["@solana/web3.js", "npm:1.93.1"],\
           ["@types/node", "npm:20.14.8"],\
+          ["@types/yaml", "npm:1.9.7"],\
           ["bs58", "npm:5.0.0"],\
           ["dotenv", "npm:16.4.5"],\
           ["ts-node", "virtual:549a51b2a0ef906c6e8795dab6e355d1f28f86eb9e9cc40094d99bb9ca49de37e81c02511c2d219ea99e69a67a0163eccef0d28400b22c2617246620911d7f43#npm:10.9.2"],\
@@ -2219,6 +2231,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/yallist-npm-4.0.0-b493d9e907-10c0.zip/node_modules/yallist/",\
         "packageDependencies": [\
           ["yallist", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["yaml", [\
+      ["npm:2.4.5", {\
+        "packageLocation": "../../.yarn/berry/cache/yaml-npm-2.4.5-4752f3d852-10c0.zip/node_modules/yaml/",\
+        "packageDependencies": [\
+          ["yaml", "npm:2.4.5"]\
         ],\
         "linkType": "HARD"\
       }]\
