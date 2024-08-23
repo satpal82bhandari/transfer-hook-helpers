@@ -4,9 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "client_convert_privatekey_to_binary_config": "ts-node ./src/client_convert_privatekey_to_binary_config",
+        "client_convert_binary_config_to_privatekey": "ts-node ./src/client_convert_binary_config_to_privatekey",
         "listener": "ts-node ./src/index.ts",
         "initialize": "ts-node ./src/initialize.ts",
-        "createTransferInstruction": "ts-node ./src/createTransferInstruction.ts"
+        "createTransferInstruction": "ts-node ./src/createTransferInstruction.ts",
+        "vesting": "ts-node ./src/vesting.ts",
+        "cpi": "ts-node ./src/cpi.ts",
+        "cpi-context": "ts-node ./src/cpi-context.ts",
+        "client_create_mint": "ts-node ./src/client_create_mint.ts",
+        "client_create_token": "ts-node ./src/client_create_token.ts",
+        "client_mintTo": "ts-node ./src/client_mintTo.ts"
     },
     "keywords": [],
     "author": "",
@@ -20,8 +28,10 @@
     },
     "dependencies": {
         "@coral-xyz/anchor": "^0.30.1",
+        "@project-serum/anchor": "^0.26.0",
         "@solana/spl-token": "^0.4.6",
         "@solana/web3.js": "^1.93.1",
+        "@types/bn.js": "^5.1.0",
         "bs58": "^5.0.0",
         "dotenv": "^16.4.5"
     }

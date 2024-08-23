@@ -1,0 +1,5 @@
+const bs58 = require('bs58');
+
+const base58PrivateKey = '57hXJqBPV4iEbcYZLq6i6W2zeSv5LQte4GGf2m1UbuhKWvL4jSpEjBBDBnVbNL8pUp7h1PovAtDPm7iQ4cFTW8aU';
+const rawPrivateKeyBytes = bs58.decode(base58PrivateKey);
+console.log(Array.from(rawPrivateKeyBytes));
